@@ -12,7 +12,8 @@ with urllib.request.urlopen(urlString) as url:
 soup = BeautifulSoup(s)
 
 comicList = soup.find_all("div","thumb")
-
+print(comicList)
+print(len(comicList))
 data = {}
 
 def get_data():
